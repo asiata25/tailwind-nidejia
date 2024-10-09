@@ -22,13 +22,17 @@ module.exports = {
         7.5: "30px",
         12.5: "50px",
         25: "100px",
+        41: "164px"
       },
       maxWidth: {
-        1130: '1130px'
+        1130: "1130px",
       },
       borderRadius: {
-        20: '20px'
-      }
+        20: "20px",
+      },
+      fontSize: {
+        28: "28px",
+      },
     },
   },
   plugins: [],
