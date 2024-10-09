@@ -20,9 +20,14 @@ module.exports = {
       },
       spacing: {
         7.5: "30px",
+        12.5: "50px",
+        25: "100px",
       },
       maxWidth: {
         1130: '1130px'
+      },
+      borderRadius: {
+        20: '20px'
       }
     },
   },

@@ -17,60 +17,182 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style/output.css" />
   </head>
-  <body>
-    <header class="pt-7.5">
-      <nav
-        class="bg-brand-dark max-w-1130 px-7.5 container w-full rounded-[20px] py-6"
-      >
-        <div
-          class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between"
-        >
-          <a
-            href="/"
-            class="flex items-center space-x-2.5 rtl:space-x-reverse"
-          >
-            <img src="./assets/logo.png" class="h-9" alt="Nidejia Logo" />
-            <span
-              class="self-center whitespace-nowrap text-2xl font-extrabold text-white"
-              >Nidejia</span
-            >
-          </a>
+  <body class="bg-black">
+    <header
+      class="pt-7.5 relative bg-[url('./../assets/background_header.png')] bg-cover bg-bottom before:absolute before:-inset-0 before:block before:bg-gradient-to-r before:from-black before:to-black/0"
+    >
+      <div class="max-w-1130 container relative">
+        <nav class="bg-brand-dark px-7.5 rounded-20 w-full py-6">
           <div
-            class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse"
+            class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between"
           >
-            <button
-              type="button"
-              class="me-3 rounded-full bg-[#323437] px-6 py-4 text-center font-semibold text-white hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-orange-600"
+            <a
+              href="/"
+              class="flex items-center space-x-2.5 rtl:space-x-reverse"
             >
-              Sign Up
-            </button>
-            <button
-              type="button"
-              class="bg-brand-primary text-brand-dark rounded-full px-6 py-4 text-center font-semibold hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-600"
+              <img src="./assets/logo.png" class="h-9" alt="Nidejia Logo" />
+              <span
+                class="self-center whitespace-nowrap text-2xl font-extrabold text-white"
+                >Nidejia</span
+              >
+            </a>
+            <div
+              class="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse"
             >
-              Sign Up
-            </button>
+              <button
+                type="button"
+                class="me-3 rounded-full bg-[#323437] px-6 py-4 text-center font-semibold text-white hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-orange-600"
+              >
+                Sign Up
+              </button>
+              <button
+                type="button"
+                class="bg-brand-primary text-brand-dark rounded-full px-6 py-4 text-center font-semibold hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-600"
+              >
+                Sign Up
+              </button>
+            </div>
+            <div
+              class="w-full items-center justify-between md:order-1 md:flex md:w-auto"
+            >
+              <ul class="space-x-7.5 flex font-semibold">
+                <li>
+                  <a href="#" class="text-white" aria-current="page">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">Categories</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">About</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div
-            class="w-full items-center justify-between md:order-1 md:flex md:w-auto"
-          >
-            <ul class="flex space-x-7.5 font-semibold">
-              <li>
-                <a href="#" class="text-white" aria-current="page">Home</a>
-              </li>
-              <li>
-                <a href="#" class="text-white">Categories</a>
-              </li>
-              <li>
-                <a href="#" class="text-white">Testimonials</a>
-              </li>
-              <li>
-                <a href="#" class="text-white">About</a>
-              </li>
-            </ul>
+        </nav>
+        <div class="mt-25 max-w-[555px] pb-[164px]">
+          <h1 class="mb-2.5 text-[55px] font-bold text-white">
+            Find Glorious Living And Loving Space
+          </h1>
+          <p class="mb-12.5 text-lg leading-8 text-white">
+            Dolor house comfortable si amet with cheap <br />
+            price that also lorem when you need grow.
+          </p>
+
+          <form>
+            <div class="flex">
+              <label
+                for="search-dropdown"
+                class="sr-only mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >Search by city or country...</label
+              >
+              <div class="relative w-full">
+                <input
+                  type="search"
+                  id="search-dropdown"
+                  class="bg-brand-dark px-7.5 placeholder:text-brand-grey block w-full rounded-full py-5 text-xl text-white"
+                  placeholder="Search by city or country..."
+                  required
+                />
+                <button
+                  class="bg-brand-primary text-brand-dark absolute end-0 top-0 h-full rounded-e-full px-10 py-5 text-xl font-semibold hover:bg-orange-500 focus:outline-none focus:ring-4 focus:ring-orange-600"
+                  type="submit"
+                >
+                  Explore
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          class="bg-brand-dark rounded-20 px-12.5 absolute bottom-0 flex w-full translate-y-1/2 justify-between py-6"
+        >
+          <div class="flex items-center space-x-4">
+            <div class="bg-brand-primary rounded-full p-[19px]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M30.3334 29.3334C30.3334 29.88 29.88 30.3334 29.3334 30.3334H2.66669C2.12002 30.3334 1.66669 29.88 1.66669 29.3334C1.66669 28.7734 2.12002 28.3334 2.66669 28.3334H29.3334C29.88 28.3334 30.3334 28.7734 30.3334 29.3334Z"
+                  fill="black"
+                />
+                <path
+                  opacity="0.4"
+                  d="M28 13.3067V28.3333H3.93335L4.00002 13.2933C4.00002 12.48 4.37335 11.7067 5.02668 11.2L14.36 3.94671C15.32 3.18671 16.68 3.18671 17.64 3.94671L26.9734 11.2C27.6267 11.7067 28 12.48 28 13.3067Z"
+                  fill="black"
+                />
+                <path
+                  d="M18 11H14C13.4533 11 13 10.5467 13 10C13 9.45333 13.4533 9 14 9H18C18.5467 9 19 9.45333 19 10C19 10.5467 18.5467 11 18 11Z"
+                  fill="black"
+                />
+                <path
+                  d="M20.6666 14.6666H11.3333C10.2266 14.6666 9.33331 15.56 9.33331 16.6666V29.3333H22.6666V16.6666C22.6666 15.56 21.7733 14.6666 20.6666 14.6666ZM14.3333 23.6666C14.3333 24.2133 13.88 24.6666 13.3333 24.6666C12.7866 24.6666 12.3333 24.2133 12.3333 23.6666V21.6666C12.3333 21.12 12.7866 20.6666 13.3333 20.6666C13.88 20.6666 14.3333 21.12 14.3333 21.6666V23.6666Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <div>
+              <dt class="text-[28px] font-bold text-white">328</dt>
+              <dd class="text-brand-grey">Kos Available</dd>
+            </div>
+          </div>
+          <div class="border-s border-[#353535]"></div>
+          <div class="flex items-center space-x-4">
+            <div class="bg-brand-primary rounded-full p-[19px]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path opacity="0.4" d="M12 2.66663C8.50663 2.66663 5.66663 5.50663 5.66663 8.99996C5.66663 12.4266 8.34663 15.2 11.84 15.32C11.9466 15.3066 12.0533 15.3066 12.1333 15.32C12.16 15.32 12.1733 15.32 12.2 15.32C12.2133 15.32 12.2133 15.32 12.2266 15.32C15.64 15.2 18.32 12.4266 18.3333 8.99996C18.3333 5.50663 15.4933 2.66663 12 2.66663Z" fill="black"/>
+                <path d="M18.7733 18.8667C15.0533 16.3867 8.98661 16.3867 5.23995 18.8667C3.54661 20 2.61328 21.5334 2.61328 23.1734C2.61328 24.8134 3.54661 26.3334 5.22661 27.4534C7.09328 28.7067 9.54661 29.3334 11.9999 29.3334C14.4533 29.3334 16.9066 28.7067 18.7733 27.4534C20.4533 26.32 21.3866 24.8 21.3866 23.1467C21.3733 21.5067 20.4533 19.9867 18.7733 18.8667Z" fill="black"/>
+                <path opacity="0.4" d="M26.6534 9.78664C26.8667 12.3733 25.0267 14.64 22.48 14.9466C22.4667 14.9466 22.4667 14.9466 22.4534 14.9466H22.4134C22.3334 14.9466 22.2534 14.9466 22.1867 14.9733C20.8934 15.04 19.7067 14.6266 18.8134 13.8666C20.1867 12.64 20.9734 10.8 20.8134 8.79997C20.72 7.71997 20.3467 6.7333 19.7867 5.8933C20.2934 5.63997 20.88 5.47997 21.48 5.42664C24.0934 5.19997 26.4267 7.14664 26.6534 9.78664Z" fill="black"/>
+                <path d="M29.32 22.12C29.2133 23.4133 28.3867 24.5333 27 25.2933C25.6667 26.0267 23.9867 26.3733 22.32 26.3333C23.28 25.4667 23.84 24.3867 23.9467 23.24C24.08 21.5867 23.2933 20 21.72 18.7333C20.8267 18.0267 19.7867 17.4667 18.6533 17.0533C21.6 16.2 25.3067 16.7733 27.5867 18.6133C28.8133 19.6 29.44 20.84 29.32 22.12Z" fill="black"/>
+                </svg>
+            </div>
+            <div>
+              <dt class="text-[28px] font-bold text-white">9/10</dt>
+              <dd class="text-brand-grey">People Happy</dd>
+            </div>
+          </div>
+          <div class="border-s border-[#353535]"></div>
+          <div class="flex items-center space-x-4">
+            <div class="bg-brand-primary rounded-full p-[19px]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path opacity="0.4" d="M13.9866 2.97333L7.33329 5.46668C5.79996 6.04001 4.54663 7.85333 4.54663 9.49333V19.4C4.54663 20.9733 5.58665 23.04 6.85331 23.9867L12.5866 28.2667C14.4666 29.68 17.5599 29.68 19.4399 28.2667L25.1733 23.9867C26.44 23.04 27.4799 20.9733 27.4799 19.4V9.49333C27.4799 7.85333 26.2266 6.04001 24.6933 5.46668L18.04 2.97333C16.9066 2.56 15.0933 2.56 13.9866 2.97333Z" fill="black"/>
+                <path d="M15.8667 15.0666C15.8934 15.0666 15.92 15.0666 15.9467 15.0666H15.9734H16C17.5334 15.0133 18.7334 13.7733 18.7467 12.2266C18.7467 10.6533 17.4667 9.37329 15.8934 9.37329C14.3201 9.37329 13.04 10.6533 13.04 12.2266C13.0667 13.76 14.2667 15.0133 15.8667 15.0666Z" fill="black"/>
+                <path d="M18.92 17.88C17.3067 16.8133 14.6933 16.8133 13.0667 17.88C12.32 18.3866 11.88 19.1066 11.88 19.8533C11.88 20.6133 12.3067 21.3066 13.0667 21.8133C13.88 22.3466 14.9333 22.6266 15.9867 22.6266C17.04 22.6266 18.1067 22.36 18.9067 21.8133C19.6533 21.3066 20.0933 20.5866 20.0933 19.84C20.1067 19.08 19.68 18.3866 18.92 17.88Z" fill="black"/>
+                </svg>
+            </div>
+            <div>
+              <dt class="text-[28px] font-bold text-white">100%</dt>
+              <dd class="text-brand-grey">High Security</dd>
+            </div>
+          </div>
+          <div class="border-s border-[#353535]"></div>
+          <div class="flex items-center space-x-4">
+            <div class="bg-brand-primary rounded-full p-[19px]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path opacity="0.4" d="M10.2 27.88C10.16 27.88 10.1066 27.9066 10.0666 27.9066C7.47996 26.6266 5.37329 24.5066 4.07996 21.92C4.07996 21.88 4.10662 21.8266 4.10662 21.7866C5.73329 22.2666 7.41329 22.6266 9.07996 22.9066C9.37329 24.5866 9.71996 26.2533 10.2 27.88Z" fill="black"/>
+                <path opacity="0.4" d="M27.92 21.9333C26.6 24.5866 24.4 26.7333 21.72 28.0266C22.2266 26.3333 22.6533 24.6266 22.9333 22.9066C24.6133 22.6266 26.2666 22.2666 27.8933 21.7866C27.88 21.84 27.92 21.8933 27.92 21.9333Z" fill="black"/>
+                <path opacity="0.4" d="M28.0266 10.2801C26.3466 9.77339 24.6533 9.36006 22.9333 9.06672C22.6533 7.34672 22.24 5.64006 21.72 3.97339C24.48 5.29339 26.7066 7.52006 28.0266 10.2801Z" fill="black"/>
+                <path opacity="0.4" d="M10.2001 4.11996C9.72006 5.74662 9.37339 7.39996 9.09339 9.07996C7.37339 9.34662 5.66672 9.77329 3.97339 10.28C5.26672 7.59996 7.41339 5.39996 10.0667 4.07996C10.1067 4.07996 10.1601 4.11996 10.2001 4.11996Z" fill="black"/>
+                <path d="M20.6533 8.78663C17.56 8.43996 14.44 8.43996 11.3467 8.78663C11.68 6.95996 12.1067 5.13329 12.7067 3.37329C12.7333 3.26663 12.72 3.18663 12.7333 3.07996C13.7867 2.82663 14.8667 2.66663 16 2.66663C17.12 2.66663 18.2133 2.82663 19.2533 3.07996C19.2667 3.18663 19.2667 3.26663 19.2933 3.37329C19.8933 5.14663 20.32 6.95996 20.6533 8.78663Z" fill="black"/>
+                <path d="M8.78663 20.6533C6.94663 20.32 5.13329 19.8933 3.37329 19.2933C3.26663 19.2667 3.18663 19.28 3.07996 19.2667C2.82663 18.2133 2.66663 17.1333 2.66663 16C2.66663 14.88 2.82663 13.7867 3.07996 12.7467C3.18663 12.7333 3.26663 12.7333 3.37329 12.7067C5.14663 12.12 6.94663 11.68 8.78663 11.3467C8.45329 14.44 8.45329 17.56 8.78663 20.6533Z" fill="black"/>
+                <path d="M29.3334 16C29.3334 17.1333 29.1734 18.2133 28.92 19.2667C28.8134 19.28 28.7334 19.2667 28.6267 19.2933C26.8534 19.88 25.04 20.32 23.2134 20.6533C23.56 17.56 23.56 14.44 23.2134 11.3467C25.04 11.68 26.8667 12.1067 28.6267 12.7067C28.7334 12.7333 28.8134 12.7467 28.92 12.7467C29.1734 13.8 29.3334 14.88 29.3334 16Z" fill="black"/>
+                <path d="M20.6533 23.2134C20.32 25.0534 19.8933 26.8667 19.2933 28.6267C19.2667 28.7334 19.2667 28.8134 19.2533 28.92C18.2133 29.1734 17.12 29.3334 16 29.3334C14.8667 29.3334 13.7867 29.1734 12.7333 28.92C12.72 28.8134 12.7333 28.7334 12.7067 28.6267C12.12 26.8534 11.68 25.0534 11.3467 23.2134C12.8933 23.3867 14.44 23.5067 16 23.5067C17.56 23.5067 19.12 23.3867 20.6533 23.2134Z" fill="black"/>
+                <path d="M21.0177 21.0177C17.6829 21.4385 14.317 21.4385 10.9822 21.0177C10.5614 17.6829 10.5614 14.317 10.9822 10.9822C14.317 10.5614 17.6829 10.5614 21.0177 10.9822C21.4385 14.317 21.4385 17.6829 21.0177 21.0177Z" fill="black"/>
+                </svg>
+            </div>
+            <div>
+              <dt class="text-[28px] font-bold text-white">183</dt>
+              <dd class="text-brand-grey">Countries</dd>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
   </body>
 </html>
